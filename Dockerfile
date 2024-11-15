@@ -1,5 +1,5 @@
 # 使用官方的 Alpine Linux 3.19 镜像作为基础镜像
-FROM alpine:3.19
+FROM alpine:3.19 AS builder
 
 # 设置环境变量以指定要安装的 Node.js 版本
 ENV NODE_VERSION 23.1.0
